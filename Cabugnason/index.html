@@ -81,11 +81,22 @@
         // ---useState ---
         // const [display, setDisplay] = React.useState('0');
         const [calc, setCalc] = React.useState({
-            current: '8',
+            current: '0',
             total: '',
             isInitial: true,
             preOp: ''
         });
+
+        // handle clear button
+        function handleClear(){
+            setCalc({
+                current: '0',
+                total: '',
+                isInitial: true,
+                preOp: ''
+            });
+        }
+
         return (
             <div className="calculator">
                 <div className="display">{calc.current}</div>
