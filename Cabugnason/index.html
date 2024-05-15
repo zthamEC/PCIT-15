@@ -76,7 +76,7 @@
             if(!calc.isInitial){
                 newValue = calc.current + value; 
             }
-            setCalc({current: newValue, total: calc.total isInitial: false}, preOp: calc.preOp);
+            setCalc({current: newValue, total: calc.total, isInitial: false}, preOp: calc.preOp);
         }
         // ---useState ---
         // const [display, setDisplay] = React.useState('0');
@@ -91,7 +91,7 @@
         function handleClear(){
             setCalc({
                 current: '0',
-                total: '',
+                total: '0',
                 isInitial: true,
                 preOp: ''
             });
