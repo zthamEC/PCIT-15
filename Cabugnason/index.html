@@ -76,7 +76,11 @@
             if(!calc.isInitial){
                 newValue = calc.current + value; 
             }
+<<<<<<< HEAD
+            setCalc({current: newValue, total: calc.total, isInitial: false, preOp: calc.preOp});
+=======
             setCalc({current: newValue, total: calc.total, isInitial: false}, preOp: calc.preOp);
+>>>>>>> d1760127a53b07d414cd95b53ab257f7ddff0618
         }
         // ---useState ---
         // const [display, setDisplay] = React.useState('0');
@@ -138,22 +142,22 @@
                 <CalcButton value="7" onClick={handleNumber} />
                 <CalcButton value="8" onClick={handleNumber} />
                 <CalcButton value="9" onClick={handleNumber} />
-                <CalcButton className="operator" value="*" onClick=(handleOperator) />
+                <CalcButton className="operator" value="*" onClick={handleOperator} />
 
                 <CalcButton value="4" onClick={handleNumber} />
                 <CalcButton value="5" onClick={handleNumber} />
                 <CalcButton value="6" onClick={handleNumber} />
-                <CalcButton className="operator" value="/" onClick=(handleOperator) />
+                <CalcButton className="operator" value="/" onClick={handleOperator} />
 
                 <CalcButton value="1" onClick={handleNumber} />
                 <CalcButton value="2" onClick={handleNumber} />
                 <CalcButton value="3" onClick={handleNumber} />
-                <CalcButton className="operator" value="+" onClick=(handleOperator) />
+                <CalcButton className="operator" value="+" onClick={handleOperator} />
 
                 <CalcButton value="C" onClick={handleClear} />
                 <CalcButton value="0" onClick={handleNumber} />
-                <CalcButton className="operator" value="=" onClick=(handleOperator) />
-                <CalcButton className="operator" value="-" onClick=(handleOperator) />
+                <CalcButton className="operator" value="=" onClick={handleOperator} />
+                <CalcButton className="operator" value="-" onClick={handleOperator} />
             </div>
         );
     }
