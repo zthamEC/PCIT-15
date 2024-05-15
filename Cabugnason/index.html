@@ -116,13 +116,13 @@
                     total *= parseFloat(calc.current); //equivalent to total = total * parsefloat (calc.current)
                     break;
                 case '/':
-                    total *= parseFloat(calc.current); //equivalent to total = total / parsefloat (calc.current)
+                    total /= parseFloat(calc.current); //equivalent to total = total / parsefloat (calc.current)
                     break;
                 case '+':
-                    total *= parseFloat(calc.current); //equivalent to total = total + parsefloat (calc.current)
+                    total += parseFloat(calc.current); //equivalent to total = total + parsefloat (calc.current)
                     break;
                 case '-':
-                    total *= parseFloat(calc.current); //equivalent to total = total - parsefloat (calc.current)
+                    total -= parseFloat(calc.current); //equivalent to total = total - parsefloat (calc.current)
                     break;
                 default:
                     total = parseFloat(calc.current)
